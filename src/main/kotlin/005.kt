@@ -1,6 +1,3 @@
-import java.lang.IllegalArgumentException
-import kotlin.math.max
-
 const val ROWS = 127
 const val COLUMNS = 7
 
@@ -30,7 +27,7 @@ fun findMySeat(seatPositions: List<SeatPosition>): Int {
     val missingSeatIds = missingSeats.map { it.getSeatId() }
 
     val seatIds = seatPositions.map { it.getSeatId() }
-    
+
     return missingSeatIds.single { seatIds.contains(it+1) && seatIds.contains(it-1) }
 }
 

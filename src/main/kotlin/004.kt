@@ -1,5 +1,3 @@
-import kotlin.math.sign
-
 fun main(args: Array<String>) {
     val input = readFileToList("004.txt")
 
